@@ -32,7 +32,7 @@ button {
 
 @media screen and (min-width: 920px) {
     .container {
-        width: 920px;
+        width: 600px;
     }
 }
 
@@ -77,13 +77,19 @@ button {
     align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+    .stories .container {
+        padding: 0;
+    }
+}
+
 .user__thumb {
     align-items: center;
     border-radius: 100px;
     display: flex;
     height: 70px;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 10px;
     overflow: hidden;
     width: 70px;
 }
@@ -107,4 +113,104 @@ button {
     border-radius: 100px;
     overflow: hidden;
     border: 2px solid #fff;
+}
+
+.feed {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .feed {
+        margin-top: 20px;
+    }
+}
+
+.post {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .post {
+        margin-bottom: 20px;
+    }
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__header .user {
+    display: flex;
+}
+
+.post__header button {
+    margin: 5px;
+}
+
+.post__figure {
+    margin: 0;
+}
+
+.post__figure img {
+    width: 100%;
+}
+
+.user .user__thumb {    
+    width: 45px;
+    height: auto;
+    margin: 10px;
+    /* margin-right: 10px; */
+}
+
+.user__name {
+    margin: auto;
+    margin: auto;
+    font-size: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.post__controls {
+    display: flex;
+    margin: 10px 5px;
+}
+
+.post__comment {
+    border-top: 1px solid #ccc;
+}
+
+.post__comment .user {
+    display: flex;
+    background-color: rgb(246, 246, 246);
+}
+
+.post__comment .user span {
+    align-self: center;
+}
+
+.post__comment .user a {
+    color: black;
+    font-weight: bold;
+}
+
+.post__comment .user .user__thumb {
+    width: 35px;
+}
+
+.post__controls i {
+    font-size: 18px;
+}
+
+.post__controls button:nth-of-type(2) {
+    /* margin-left: 10px; */
+    flex-basis: 10%;
+}
+
+.post__controls button:nth-of-type(3) {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;    
 }
